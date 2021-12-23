@@ -1,0 +1,16 @@
+{
+  "name": "copylandingpage",
+  "version": "1.0.0",
+  "description": "experience",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile":"node-sass scss/main.scss main.css",
+    "watch":"node-sass scss/main.scss main.css -w"
+  },
+  "author": "soussi stephane",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}

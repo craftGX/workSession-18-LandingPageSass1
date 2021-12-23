@@ -1,0 +1,69 @@
+@import 'mixins.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: aqua;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 13vh;
+    background: rgb(15, 15, 92);
+    @include flex;
+    justify-content: space-between;
+    .right{
+        width: 50%;
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+    .left{
+        ul{
+            @include flex;
+            margin-right: 50px;
+            li{
+                list-style: none;
+                margin-left: 50px;
+                cursor: pointer;
+                transition: all 1s ease-in-out;
+                &:hover{
+                    color: aqua;
+                    transition: all 0.5s ease-in-out;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+section{
+    width: 100%;
+    height:70vh;
+    @include flex;
+    justify-content: center;
+    h1{
+        font-size: 5rem;
+    }
+    p{
+        text-align: center;
+        font-size: 1.3rem;
+        margin-top: 40px;
+    }
+    .formulaire{
+        margin-top: 70px;
+        margin-left: 120px;
+        input{
+            @include button;
+        }
+        button{
+            @include button;
+            border: 1px solid white;
+            background: aqua;
+            color: white;
+        }
+    }
+}

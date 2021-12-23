@@ -1,0 +1,8 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+@mixin button{
+    padding: 15px 10px;
+    border-radius: 5px;
+}
